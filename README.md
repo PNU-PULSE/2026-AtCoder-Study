@@ -3,7 +3,7 @@
 - **스터디 방식**
 
 1. 이 저장소(repository)를 fork 하여 자신의 원격 저장소로 복사해 갑니다.
-2. 생성된 원격 저장소에 대회 이름에 맞는 폴더에 github_ID로 폴더를 만들고 그 안에 소스코드를 올립니다.
+2. 생성된 원격 저장소에 대회 이름에 맞는 폴더에 AtCoder 핸들로 폴더를 만들고 그 안에 소스코드를 올립니다.
 3. 소스코드 이름은 각 문제에 맞는 영어를 적으면 됩니다. ex) A.cpp B.py ...
 4. commit 할 경우는 아래 commit 규칙을 지킵니다.
 5. 대회가 끝나면 모든 문제를 commit 후 PR(pull request)합니다.
@@ -20,7 +20,7 @@
 
 - **PR 규칙**
 
-  PR 제목: 대회 이름 / GithubId  
+  PR 제목: 대회 이름 / AtCoder 핸들
   ex) ABC### / cnvxlns
   comment는 각 문제마다 풀이 방법과 어려웠던 내용을 설명합니다.
 
@@ -35,7 +35,7 @@
 ### fork 후 원격 저장소에서 로컬 저장소로 파일 받기
 
 ```bash
-git clone https://github.com/[본인 AtCoder 아이디]/2026-AtCoder-Study
+git clone https://github.com/[본인 Github 아이디]/2026-AtCoder-Study
 ```
 
 ### 로컬에서 파일 저장 후 원격 저장소로 올리기
