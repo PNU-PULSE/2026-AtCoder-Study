@@ -71,7 +71,7 @@ Pull Request는 웹 github에서 진행하면 됩니다.
 <details>
 <summary><h3>참여자 목록 </h3></summary>
 
-| Profile | Name | Github ID | Atcoder Handle |
+| Profile | Name | Github ID | Atcoder Handle | 
 | :---: | :---: | :--- | :--- |
 | <img src="https://github.com/RainDrop3.png" width="50" align="middle"> | 강민규 | <sub>[![RainDrop3](https://img.shields.io/badge/-RainDrop3-181717?logo=GitHub)](https://github.com/RainDrop3)</sub> | [<kbd>harib0</kbd>](https://atcoder.jp/users/harib0)
 | <img src="https://github.com/corntofu.png" width="50" align="middle"> | 강현택 | <sub>[![corntofu](https://img.shields.io/badge/-corntofu-181717?logo=GitHub)](https://github.com/corntofu)</sub> |
