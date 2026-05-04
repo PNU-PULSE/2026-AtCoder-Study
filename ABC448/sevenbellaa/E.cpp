@@ -2,7 +2,7 @@
 using namespace std;
 using ll = long long;
 
-const ll DIV = 10007;
+ll DIV = 10007 * 9;
 
 ll power(ll n, ll k) {
   ll res = 1;
@@ -16,24 +16,13 @@ ll power(ll n, ll k) {
   return res;
 }
 
-ll calcOne(ll l) {
-  if (l == 1) return 1;
-  ll half = l / 2;
-
-  ll res = 1;
-  res = res * (calcOne(l - half)) % DIV * power(10, half) % DIV;
-  res = (res + (calcOne(half))) % DIV;
-  return res;
-}
-
-// N/M % DIV
-
 int main() {
   ios_base::sync_with_stdio(false);
   cin.tie(nullptr);
 
   ll K, M;
   cin >> K >> M;
+  DIV *= M;
 
   vector<pair<ll, ll>> v;
   vector<ll> pfs(K + 1);
@@ -49,10 +38,8 @@ int main() {
 
   ll ans = 0;
   for (int i = 0; i < K; i++) {
-    ans += v[i].first * calcOne(v[i].second) % DIV *
-           power(10, pfs[i] - v[i].second) % DIV;
-    ans %= DIV;
+    auto [c, l] = v[i];
+    ans = (ans + c * (power(10, l) - 1) % DIV * power(10, pfs[i] - l) % DIV) % DIV;
   }
-  ans = ans * power(M, DIV - 2) % DIV;
-  cout << ans;
+  cout << ans / 9 / M;
 }
